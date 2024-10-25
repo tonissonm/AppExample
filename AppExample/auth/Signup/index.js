@@ -4,6 +4,7 @@ import Input from '../../components/Input'
 import React,{useState} from 'react'
 import Checkbox from '../../components/CheckBox'
 import Separator from '../../components/Separator'
+import GoogleLogin from '../../components/GoogleLogin'
 
 const Signup = () => {
   const [checked,setChecked] = useState(false)
@@ -19,6 +20,11 @@ const Signup = () => {
         </View>
         <Button style={styles.button} title="Sign In"/>
         <Separator text="Or signup with"/>
+        <GoogleLogin/>
+        <Text style ={styles.footerText}>Already have an account?
+          <Text style={styles.footerLink}>Sign In</Text>
+        </Text>
+
     </View>
   )
 }

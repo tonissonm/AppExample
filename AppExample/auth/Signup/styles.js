@@ -18,4 +18,22 @@ export const styles = StyleSheet.create({
         color:colors.blue,
         fontWeight:'500'
     },
+    agreeText: {
+        color:colors.blue,
+        marginHorizontal:14
+    },
+    agreeTextBold:{
+        fontWeight:'bold'
+    },
+    button:{
+        marginVertical:20
+    },
+    footerText:{
+        color:colors.blue,
+        marginBottom:56,
+        textAlign:'center'
+    },
+    footerLink:{
+        fontWeight:'bold'
+    }
 })
