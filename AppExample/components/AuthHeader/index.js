@@ -1,14 +1,15 @@
 import {Pressable,Image, View, Text } from 'react-native'
 import React from 'react'
 import {styles} from './styles'
-
-const AuthHeader = ({title,onBackPress}) => {
+import {useRouter} from 'expo-router'
+const AuthHeader = ({title,onPress}) => {
+  const router = useRouter();
   return (
-    <View>
-        <Pressable onPress={onBackPress}>
+    <View style={styles.container}>
+        <Pressable onPress={() => router.push('/')}>
             <Image source ={require('../../assets/auth_back.png')}/>
         </Pressable>
-      <Text>{title}</Text>
+      <Text style={styles.title}>{title}</Text>
     </View>
   )
 }

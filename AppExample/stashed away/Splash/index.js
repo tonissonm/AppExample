@@ -1,7 +1,7 @@
 import { View, Text, Image,Pressable } from 'react-native'
 import React from 'react'
 import {styles} from './styles'
-import Button from '../../components/Button'
+import Button from '../../../components/Button'
 import { router } from 'expo-router'
 const Splash = () => {
   return (

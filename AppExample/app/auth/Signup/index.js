@@ -1,11 +1,13 @@
-import { View } from 'react-native'
-import AuthHeader from '../../components/AuthHeader'
-import Input from '../../components/Input'
+import {Text,View } from 'react-native'
+import AuthHeader from '../../../components/AuthHeader'
+import Input from '../../../components/Input'
 import React,{useState} from 'react'
-import Checkbox from '../../components/CheckBox'
-import Separator from '../../components/Separator'
-import GoogleLogin from '../../components/GoogleLogin'
-
+import Checkbox from '../../../components/CheckBox'
+import Separator from '../../../components/Separator'
+import GoogleLogin from '../../../components/GoogleLogin'
+import Button from '../../../components/Button'
+import { router } from 'expo-router'
+import {styles} from './styles'
 const Signup = () => {
   const [checked,setChecked] = useState(false)
   return (

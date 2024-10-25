@@ -1,6 +1,6 @@
-import { View, Text } from 'react-native'
+import { View, Text,TouchableOpacity,Image } from 'react-native'
 import React from 'react'
-
+import {styles} from './styles'
 const GoogleLogin = () => {
     const signIn = async ()=>{
         try{
